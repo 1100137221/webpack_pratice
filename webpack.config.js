@@ -14,6 +14,11 @@ module.exports = {
                 query: {
                     presets: ['react', 'es2015'] //babel 的設定檔,可以不用寫 .babelrc
                 }
+            },
+            {
+                test: /\.css$/,
+                exclude: 'node_modules',
+                loaders: ['style', 'css']
             }
         ]
     },
